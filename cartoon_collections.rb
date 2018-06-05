@@ -25,9 +25,9 @@ end
 # => #find_the_cheese checks if the ingredients list contains one of the cheeses and returns that cheese if it does
 ##
 def find_the_cheese(ingredients)
+  def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  has_cheese = false;
-  cheese_types.map {|cheese| ingredients.include?(cheese)}
-
-  #ingredients.detect { |ingredient| ingredient == cheese_types[0] || ingredient == cheese_types[1] || ingredient == cheese_types[2]}
+  array.find do |type|
+    cheese_types.include?(type)
+  end
 end
