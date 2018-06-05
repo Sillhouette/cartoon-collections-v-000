@@ -18,7 +18,7 @@ end
 # =>  #long_planeteer_calls returns true if call length is greater than 4, false otherwise
 ##
 def long_planeteer_calls(planeteer_calls)
-  planeteer_calls.all? { |call| call.length > 4 }
+  planeteer_calls.any? { |call| call.length > 4 }
 end
 
 ##
@@ -26,7 +26,7 @@ end
 ##
 def find_the_cheese(ingredients)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  #has_cheese = 
+  #has_cheese =
   cheese_types.each {|cheese| ingredients.include?}
 
   #ingredients.detect { |ingredient| ingredient == cheese_types[0] || ingredient == cheese_types[1] || ingredient == cheese_types[2]}
