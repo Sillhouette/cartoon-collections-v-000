@@ -18,7 +18,7 @@ end
 # =>  #long_planeteer_calls returns true if call length is greater than 4, false otherwise
 ##
 def long_planeteer_calls(planeteer_calls)
-  planeteer_calls.any? { |call| call.length > 4 }
+  planeteer_calls.include? { |call| call.length > 4 }
 end
 
 ##
