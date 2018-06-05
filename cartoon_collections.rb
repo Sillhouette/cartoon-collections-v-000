@@ -26,8 +26,8 @@ end
 ##
 def find_the_cheese(ingredients)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  has_cheese =
-  cheese_types.each {|cheese| has_cheese = ingredients.include?(cheese)}
-
+  has_cheese = false;
+  cheese_types.map {|cheese| ingredients.include?(cheese)}
+has_cheese
   #ingredients.detect { |ingredient| ingredient == cheese_types[0] || ingredient == cheese_types[1] || ingredient == cheese_types[2]}
 end
